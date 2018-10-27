@@ -1,0 +1,3 @@
+export const FETCH_PHONES ='FETCH_PHONES';
+export const PHONE_SELECTED='PHONE_SELECTED';
+export const CLOSE_OVERLAY='CLOSE_OVERLAY';
