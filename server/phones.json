@@ -1,0 +1,74 @@
+[
+    {
+        "brand":"apple",
+        "model":"iphone-xs",
+        "detailImage":"iphone-x.png",
+        "displayImage":"iphone-x-small.png",
+        "price":"1200",
+        "state":"brand new",
+        "id":"iphone-1"
+    },
+    {
+        "brand":"apple",
+        "model":"iphone-xr",
+        "detailImage":"iphone-x.png",
+        "displayImage":"iphone-x-small.png",
+        "price":"1100",
+        "state":"brand new",
+        "id":"iphone-2"
+    },
+    {
+        "brand":"apple",
+        "model":"iphone-x",
+        "detailImage":"iphone-x.png",
+        "displayImage":"iphone-x-small.png",
+        "price":"700",
+        "state":"second hand",
+        "id":"iphone-3"
+    },
+    {
+        "brand":"apple",
+        "model":"iphone-8",
+        "detailImage":"iphone-x.png",
+        "displayImage":"iphone-x-small.png",
+        "price":"1000",
+        "state":"brand new",
+        "id":"iphone-4"
+    },
+    {
+        "brand":"apple",
+        "model":"iphone-7s",
+        "detailImage":"iphone-x.png",
+        "displayImage":"iphone-x-small.png",
+        "price":"1000",
+        "state":"brand new",
+        "id":"iphone-5"
+    },
+    {
+        "brand":"samsung",
+        "model":"galaxy-s8",
+        "detailImage":"galaxy.png",
+        "displayImage":"galaxy-small.png",
+        "price":"1000",
+        "state":"brand new",
+        "id":"samsung-1"
+    },
+    {
+        "brand":"samsung",
+        "model":"galaxy-s7",
+        "detailImage":"galaxy.png",
+        "displayImage":"galaxy-small.png",
+        "price":"800",
+        "state":"second hand",
+        "id":"samsung-2"
+    },
+    {
+        "brand":"samsung",
+        "model":"galaxy-s2",
+        "detailImage":"galaxy.png",
+        "displayImage":"galaxy-small.png",
+        "price":"600",
+        "state":"brand new",
+        "id":"samsung-3"
+    }
+]

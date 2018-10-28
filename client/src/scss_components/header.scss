@@ -1,0 +1,50 @@
+.header-container{
+    width: 100%;
+    background: #000;
+   
+}
+.header{
+    display: block;
+    height: 165px;
+    background-color: #000;
+    font-family: $main-font;
+    position: relative;
+    max-width: $max-screen;
+    margin: 0 auto;
+    h1{
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 900;
+      display:inline-block;
+      width: 100%;
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .logos{
+     display: flex;
+     justify-content:space-around;
+     width: 350px;
+     margin: 0 auto;
+     cursor: pointer;
+    }
+
+    .navbar{
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        left: 25px;
+        margin: 0;
+        padding: 0;
+        li{
+            color:#fff;
+            font-weight: 500;
+            font-size: 16px;
+            margin: 0;
+            margin-right: 20px;
+            list-style: none;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+    }
+}

@@ -3,34 +3,48 @@ import {connect} from 'react-redux';
 import {selectPhone} from '../actions/selectPhoneAction';
 import {closeOverlay} from '../actions/closeOverlayAction';
 import store from '../store';
+
+
+const URL='http://localhost:4000/images/';
+
 class PhoneDetailComponet extends Component{
     render(){
-    console.log(store.getState());
+    // console.log(store.getState());
     
         const phone=this.props.phones.filter((phone)=>phone.id === this.props.activePhone)
-        console.log(this.props.phoneDisplay);
         if(!this.props.phoneDisplay){
           return(
-              <div className="detail-container">
-                  phone detail hide
-              </div>
+              <div></div>
           )
         }
         
         return(
             <div className="detail-container">
                <div className="detail">
+               <div className="product-img">
+               <img src={`${URL}${phone[0].detailImage}`}/>
+               </div>
+               <div className="info">
                  <p className="brand">
                  <span>brand:</span>{phone[0].brand}
                  </p>
-                 <p className="version">
-                 <span>version:</span>{phone[0].version}</p>
+                 <p className="model">
+                 <span>model:</span>{phone[0].model}</p>
+                 <p className="state">
+                 <span>state:</span>{phone[0].state}</p>
+                 <p className="year">
+                 <span>year:</span>{phone[0].year}</p>
                  <p className="price">
-                 <span>price:</span>{phone[0].price}
+                 <span>price:</span>{phone[0].price+" €"}
                  </p>
+                 <p className="descri">
+                 <span>description:</span>{phone[0].descri}</p>
+                 <button onClick={this.props.closeOverlay}>close</button>
+                 </div>
+                
             </div>
-            <button onClick={this.props.closeOverlay}>close window</button>
             </div>
+           
         )
     }
 }
