@@ -1,74 +1,122 @@
 [
     {
         "brand":"apple",
-        "model":"iphone-xs",
+        "model":"iphone-xs-plus",
+        "product":"mobile",
+        "year":"2018",
         "detailImage":"iphone-x.png",
         "displayImage":"iphone-x-small.png",
         "price":"1200",
         "state":"brand new",
-        "id":"iphone-1"
+        "id":"iphone-1",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, "
     },
     {
         "brand":"apple",
-        "model":"iphone-xr",
+        "model":"iphone-xs",
+        "product":"mobile",
+        "year":"2018",
         "detailImage":"iphone-x.png",
         "displayImage":"iphone-x-small.png",
         "price":"1100",
         "state":"brand new",
-        "id":"iphone-2"
+        "id":"iphone-2",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, "
     },
     {
         "brand":"apple",
-        "model":"iphone-x",
+        "model":"iphone-xr",
+        "product":"mobile",
+        "year":"2018",
         "detailImage":"iphone-x.png",
         "displayImage":"iphone-x-small.png",
         "price":"700",
         "state":"second hand",
-        "id":"iphone-3"
+        "id":"iphone-3",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, "
+    },
+    {
+        "brand":"apple",
+        "model":"iphone-8-plus",
+        "product":"mobile",
+        "year":"2018",
+        "detailImage":"iphone-x.png",
+        "displayImage":"iphone-x-small.png",
+        "price":"1000",
+        "state":"brand new",
+        "id":"iphone-4",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, "
     },
     {
         "brand":"apple",
         "model":"iphone-8",
+        "product":"mobile",
+        "year":"2018",
         "detailImage":"iphone-x.png",
         "displayImage":"iphone-x-small.png",
         "price":"1000",
         "state":"brand new",
-        "id":"iphone-4"
+        "id":"iphone-5",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, "
     },
     {
         "brand":"apple",
-        "model":"iphone-7s",
+        "model":"iphone-7-plus",
+        "product":"mobile",
+        "year":"2018",
         "detailImage":"iphone-x.png",
         "displayImage":"iphone-x-small.png",
         "price":"1000",
         "state":"brand new",
-        "id":"iphone-5"
+        "id":"iphone-6",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, "
+    },
+    {
+        "brand":"apple",
+        "model":"iphone-7",
+        "product":"mobile",
+        "year":"2018",
+        "detailImage":"iphone-x.png",
+        "displayImage":"iphone-x-small.png",
+        "price":"1000",
+        "state":"brand new",
+        "id":"iphone-7",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, "
     },
     {
         "brand":"samsung",
         "model":"galaxy-s8",
+        "product":"mobile",
+        "year":"2018",
         "detailImage":"galaxy.png",
         "displayImage":"galaxy-small.png",
         "price":"1000",
         "state":"brand new",
-        "id":"samsung-1"
+        "id":"samsung-1",
+        "description":"lLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut," 
     },
     {
         "brand":"samsung",
         "model":"galaxy-s7",
+        "product":"mobile",
+        "year":"2018",
         "detailImage":"galaxy.png",
         "displayImage":"galaxy-small.png",
         "price":"800",
         "state":"second hand",
-        "id":"samsung-2"
+        "id":"samsung-2",
+        "description":"lLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut," 
     },
     {
         "brand":"samsung",
         "model":"galaxy-s2",
+        "product":"mobile",
+        "year":"2018",
         "detailImage":"galaxy.png",
         "displayImage":"galaxy-small.png",
         "price":"600",
         "state":"brand new",
-        "id":"samsung-3"
+        "id":"samsung-3",
+        "description":"lLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, "
     }
 ]

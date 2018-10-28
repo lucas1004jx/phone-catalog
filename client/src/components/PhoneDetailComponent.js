@@ -2,8 +2,6 @@ import React,{Component} from 'react';
 import {connect} from 'react-redux';
 import {selectPhone} from '../actions/selectPhoneAction';
 import {closeOverlay} from '../actions/closeOverlayAction';
-import store from '../store';
-
 
 const URL='http://localhost:4000/images/';
 
@@ -22,7 +20,7 @@ class PhoneDetailComponet extends Component{
             <div className="detail-container">
                <div className="detail">
                <div className="product-img">
-               <img src={`${URL}${phone[0].detailImage}`}/>
+               <img src={`${URL}${phone[0].detailImage}`} alt={phone[0].brand}/>
                </div>
                <div className="info">
                  <p className="brand">
@@ -38,7 +36,7 @@ class PhoneDetailComponet extends Component{
                  <span>price:</span>{phone[0].price+" €"}
                  </p>
                  <p className="descri">
-                 <span>description:</span>{phone[0].descri}</p>
+                 <span>description:</span>{phone[0].description}</p>
                  <button onClick={this.props.closeOverlay}>close</button>
                  </div>
                 

@@ -1,15 +1,30 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
-import {selectBrand} from '../actions/selectBrandAction'
+import {selectBrand} from '../actions/selectBrandAction';
+import {selectProduct} from '../actions/selectProduct';
 import apple from '../images/apple-logo.png';
 import samsung from '../images/samsung-logo.png';
 import huawei from '../images/huawei-logo.png';
 import xiaomi from '../images/xiaomi-logo.png';
-import store from '../store';
+
 const Brand=['apple','samsung','huawei','xiaomi'];
 const Logo={apple,samsung,huawei,xiaomi};
 const menuItem=['mobile','tablet','watch'];
 class Header extends Component{
+    componentDidMount(){
+        window.addEventListener('scroll',()=>{
+            let top=window.pageYOffset;
+            const header=document.querySelector('.header-container');
+           if(top>=120){
+              header.style.top=top - 120 +'px';
+              header.classList.add('fixed');
+           }else{
+            header.style.top=0 +'px';
+            header.classList.remove('fixed');
+           }
+            
+        });
+    }
     renderLogo(){
         return(
             Brand.map((logo,index)=>
@@ -22,7 +37,7 @@ class Header extends Component{
         return(
             menuItem.map((item,index)=>
             <li key={index}
-             onClick={this.props.selectBrand}>
+             onClick={this.props.selectProduct}>
              {item}
              </li>
             )
@@ -30,7 +45,6 @@ class Header extends Component{
        
     }
      render(){
-         console.log('header',store.getState());
          
          return(
          <div className="header-container">
@@ -56,4 +70,4 @@ const mapStateToProps= state=>({
 
 });
 
-export default connect(mapStateToProps,{selectBrand})(Header);
+export default connect(mapStateToProps,{selectBrand,selectProduct})(Header);

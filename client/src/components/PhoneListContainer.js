@@ -3,23 +3,33 @@ import {connect} from 'react-redux';
 import {fetchPhones} from '../actions/fetchPhoneAction';
 import {selectPhone} from '../actions/selectPhoneAction';
 import {deselectBrand} from '../actions/deselectBrand';
+import {deselectProduct} from '../actions/deselectProduct';
+import Preloader from './Preloader';
 
 const URL='http://localhost:4000/images/';
 class PhoneListContainer extends Component{
       componentDidMount(){
-          this.props.fetchPhones();  
+          //to simulate the request time
+          setTimeout(()=>this.props.fetchPhones(),2000); 
       }
 
-     renderPhone(){
-         console.log(this.props.phones);
+     renderProduct(){
+
          const Brand=this.props.brand;
-         const Mobiles= Brand === null? 
-               this.props.phones:
-               this.props.phones.filter((phone)=>phone.brand===Brand);
-         console.log(Brand);
-         
+         const Type=this.props.product;
+         let Products=this.props.phones;
+         if(Brand == null && Type==null){
+           Products=this.props.phones;
+         }else if(Brand==null) { 
+             Products=Products.filter((phone)=>phone.product===Type);
+         }else if(Type==null){
+            Products=Products.filter((phone)=>phone.brand===Brand);
+         }else{
+            Products=Products.filter((phone)=>phone.product===Type && phone.brand===Brand);
+         }
+ 
        return (
-           Mobiles.map((phone,index)=>
+           Products.map((phone,index)=>
            <div className="phone" key={index} data-id={phone.id}>
              <img src={`${URL}${phone.displayImage}`} alt="" />
             <div className="detail">
@@ -46,18 +56,20 @@ class PhoneListContainer extends Component{
                 ):null}
 
                 {this.props.product !==null?(
-                    <div className="product-name subMenu" onClick={this.props.deselectBrand}>{this.props.product}</div>
+                    <div className="product-name subMenu" onClick={this.props.deselectProduct}>{this.props.product}</div>
                     ):null}
              </div>
           )
       }
 
     render(){
-      console.log('state change');
+        if(!this.props.phones.length){
+            return <Preloader/>
+        }
         return(
             <div className="phones-container">
             {this.renderSubMenu()}
-               {this.renderPhone()}
+               {this.renderProduct()}
             </div>
         )
     }
@@ -71,4 +83,4 @@ const mapStateToProps= state=>({
 
 });
 
-export default connect(mapStateToProps,{fetchPhones,selectPhone,deselectBrand})(PhoneListContainer);
+export default connect(mapStateToProps,{fetchPhones,selectPhone,deselectBrand,deselectProduct})(PhoneListContainer);

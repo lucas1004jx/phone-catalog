@@ -1,9 +1,10 @@
 .detail-container{
   width: 100%;
-  height: calc(100vh - 165px);
+  height: 100vh;
+  min-height: 966px;
   background-color: rgba(0,0,0,0.7);
   position: fixed;
-  top:165px;
+  top:0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +16,9 @@
       max-width: $max-screen;
        background-color: #fff;
       display: grid;
-      grid-template-columns: 50% 1fr;
+      grid-template-columns: 50% minmax(300px,350px);
       grid-template-areas: "img info";
-      grid-template-rows: 500px;
+      grid-template-rows: 600px;
       box-sizing: border-box;
        border-radius: 8px;
        box-shadow: 0 2px 4px $shadow-color;
@@ -39,12 +40,22 @@
             font-weight: 500;
             text-transform: capitalize;
         }
+        .descri{
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            span{
+                margin: 16px 0;
+                display: block;
+                font-size: 16px;
+            }
+        }
         button{
             position: absolute;;
             bottom: 30px;
             right: 30px;
             font-size: 16px;
-            border-color: $display-text-color;
+            border:1px solid $display-text-color;
             color:$display-text-color;
             border-radius: 8px;
             padding: 5px 10px;
