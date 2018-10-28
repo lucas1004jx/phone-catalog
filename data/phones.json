@@ -2,7 +2,7 @@
     {
         "brand":"iphone",
         "version":"XS",
-        "image":" ",
+        "image":"./images/iphone-x.png ",
         "price":"1200",
         "state":"brand new",
         "id":"iphone-1"

@@ -18,11 +18,13 @@ http.createServer(function(req,res){
 }).listen(4000);
 
 function listenIphone(res){
+    res.writeHead(200,{"Content-Type":"text/json"});
  var iphone = data.filter((phone)=>phone.name=="iphone");
  res.end(JSON.stringify(iphone));
 }
 
 function listenSamsumg(res){
+    res.writeHead(200,{"Content-Type":"text/json"});
     var samsumg=data.filter((phone)=>phone.brand=="samsumg");
     res.end(JSON.stringify(samsumg));
 }

@@ -4,17 +4,17 @@ import {fetchPhones} from '../actions/fetchPhoneAction';
 import {selectPhone} from '../actions/selectPhoneAction';
 
 
-
+const URL='http://localhost:4000/';
 class PhoneListContainer extends Component{
       componentDidMount(){
-          this.props.fetchPhones();   
+          this.props.fetchPhones();  
       }
 
      renderPhone(){
        return (
            this.props.phones.map((phone,index)=>
            <div className="phone" key={index} data-id={phone.id}>
-             <img src="" alt="" />
+             <img src='' alt="" />
             <div className="detail">
                  <p className="brand">
                  <span>brand:</span>{phone.brand}
