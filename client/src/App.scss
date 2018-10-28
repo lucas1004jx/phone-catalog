@@ -4,4 +4,11 @@
 @import "./scss_components/display_phone";
 @import "./scss_components/detail.scss";
 @import "./scss_components/preloader.scss";
+@import "./scss_components/footer.scss";
 
+.App{
+    position: relative;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}

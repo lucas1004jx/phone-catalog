@@ -4,6 +4,7 @@ import './components/PhoneDetailComponent';
 import PhoneListContainer from './components/PhoneListContainer';
 import PhoneDetailComponent from './components/PhoneDetailComponent';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import {Provider} from 'react-redux';
 import store from './store';
 
@@ -19,7 +20,7 @@ class App extends Component {
          <Header/>
         <PhoneListContainer/>
         <PhoneDetailComponent/>
-         
+         <Footer/>
     
       </div>
       </Provider>

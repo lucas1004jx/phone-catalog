@@ -86,7 +86,7 @@
     {
         "brand":"apple",
         "model":"ipad",
-        "product":"mobile",
+        "product":"tablet",
         "year":"2013",
         "detailImage":"ipad.png",
         "displayImage":"ipad-small.png",
@@ -98,7 +98,7 @@
     {
         "brand":"apple",
         "model":"ipad",
-        "product":"mobile",
+        "product":"tablet",
         "year":"2014",
         "detailImage":"ipad.png",
         "displayImage":"ipad-small.png",
@@ -110,7 +110,7 @@
     {
         "brand":"apple",
         "model":"ipad",
-        "product":"mobile",
+        "product":"tablet",
         "year":"2018",
         "detailImage":"ipad.png",
         "displayImage":"ipad-small.png",
