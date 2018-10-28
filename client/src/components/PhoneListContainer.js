@@ -31,13 +31,13 @@ class PhoneListContainer extends Component{
        return (
            Products.map((phone,index)=>
            <div className="phone" key={index} data-id={phone.id}>
-             <img src={`${URL}${phone.displayImage}`} alt="" />
+             <img src={`${URL}${phone.displayImage}`} alt="" onClick={this.props.selectPhone}/>
             <div className="detail">
                  <p className="brand">
                  {phone.brand}
                  </p>
                  <p className="model">
-                {phone.model}</p>
+                {phone.model.replace(/-/g,' ')}</p>
                  <p className="price">
                  {`${phone.price} €`}
                  </p>

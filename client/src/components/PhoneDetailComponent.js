@@ -27,7 +27,7 @@ class PhoneDetailComponet extends Component{
                  <span>brand:</span>{phone[0].brand}
                  </p>
                  <p className="model">
-                 <span>model:</span>{phone[0].model}</p>
+                 <span>model:</span>{phone[0].model.replace(/-/g,' ')}</p>
                  <p className="state">
                  <span>state:</span>{phone[0].state}</p>
                  <p className="year">
@@ -37,9 +37,9 @@ class PhoneDetailComponet extends Component{
                  </p>
                  <p className="descri">
                  <span>description:</span>{phone[0].description}</p>
-                 <button onClick={this.props.closeOverlay}>close</button>
+                 
                  </div>
-                
+                 <button onClick={this.props.closeOverlay}>close</button>
             </div>
             </div>
            
