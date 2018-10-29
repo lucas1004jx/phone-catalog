@@ -12,7 +12,7 @@ app.get('/api/phones',(req,res)=>{
 });
 
 app.get('/api/apple',(req,res)=>{
-    const iphone=data.filter((phone)=>phone.brand='apple');
+    const iphone=data.filter((phone)=>phone.brand=='apple');
     res.send(iphone);
 });
 
@@ -29,13 +29,15 @@ app.get('/api/xiaomi',(req,res)=>{
     res.send(samsumg);
 });
 
-app.get('/api/apple:model',(req,res)=>{
+
+
+app.get('/api/apple/:model',(req,res)=>{
     let phone=data.filter((phone)=>
     phone.model.toLowerCase()===req.params.model.toLowerCase()&& phone.brand==='apple'
     )
-    phone.length !==0 ? res.send(phone):res.status(404).send('Can´t find this phone !!')
+   phone.length !==0 ? res.send(phone):res.status(404).send('Can´t find this phone !!')
+   
 });
-
 app.get('/api/samsung/:model',(req,res)=>{
     let phone=data.filter((phone)=>
     phone.model.toLowerCase()===req.params.model.toLowerCase()&& phone.brand==='samsung'
