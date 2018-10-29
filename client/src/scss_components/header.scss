@@ -1,31 +1,17 @@
 .header-container{
     width: 100%;
+    box-sizing: border-box;
     background: #000;
    position: relative;
+   padding: 10px 25px;
    transition: background-color 0.5s ease,transform 0.3s ease;
    z-index: 10;
+   @include break(0,768px){
+    padding: 10px 10px;
+   }
 }
 .header-container.fixed{
     background-color: rgba(#000,0.8);
-    @include break(0,768px){
-        transform: translateY(50px);
-    }
-    
-    .header{
-       
-        .logos{
-            position: absolute;
-            bottom: 10px;
-            right: 25px;
-            @include break(0,768px){
-                position: absolute;
-                bottom: 50px;
-                right: 50%;
-                transform: translateX(50%);
-            }
-        }
-    }
-    
 }
 .header{
     display: block;
@@ -38,48 +24,71 @@
       color: #fff;
       text-transform: uppercase;
       font-weight: 900;
-      display:inline-block;
-      width: 100%;
-      text-align: center;
-      font-size: 40px;
+      display:block;
+      text-align: left;
+      font-size: 20px;
+      margin: 0;
       margin-bottom: 10px;
       @include break(0,768px){
-        font-size: 24px;
+        font-size: 18px;
+      }
+      @include break(0,599px){
+          text-align: center;
       }
     }
     
     .logos{
+        position: absolute;
+        bottom: 0;
+        right: 0;
      display: flex;
      justify-content:space-around;
      width: 350px;
-     margin: 0 auto;
      cursor: pointer;
-     @include break(0,768px){
-        width: 300px;
-        margin-top: 20px;
+     @include break(0,999px){
+        width: 250px;
+      }
+      @include break(0,599px){
+        position: absolute;
+        bottom: -9px;
+        right: 0;
+        transform: translate(0,100%);
+        width: calc(100% + 10px);
+        margin-left: -10px;
+        margin-right: -10px;
+        background: #000;
+        padding: 5px;
+    }
+      .logo{
+          @include break(0,999px){
+           height: 20px;
+          }
       }
     }
 
     .navbar{
         display: flex;
         position: absolute;
-        bottom: 10px;
-        left: 25px;
+        bottom: 0;
+        left: 0;
         margin: 0;
         padding: 0;
-        @include break(0,768px){
+        @include break(0,599px){
             left: 50%;
             transform: translateX(-50%);
           }
         li{
             color:#fff;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 14px;
             margin: 0;
             margin-right: 20px;
             list-style: none;
             text-transform: capitalize;
-            cursor: pointer;
+            cursor: pointer;  
+        }
+        li:last-child{
+            margin-right: 0;
         }
     }
 }

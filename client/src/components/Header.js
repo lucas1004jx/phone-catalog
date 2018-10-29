@@ -15,8 +15,8 @@ class Header extends Component{
         window.addEventListener('scroll',()=>{
             let top=window.pageYOffset;
             const header=document.querySelector('.header-container');
-           if(top>=120){
-              header.style.top=top - 120 +'px';
+           if(top>=30){
+              header.style.top=top - 30 +'px';
               header.classList.add('fixed');
            }else{
             header.style.top=0 +'px';
@@ -65,8 +65,8 @@ class Header extends Component{
 }
 
 const mapStateToProps= state=>({
-    brand:state.selectBrand.brand,
-    product:state.selectBrand.product
+    brand:state.filter.brand,
+    product:state.filter.product
 
 });
 

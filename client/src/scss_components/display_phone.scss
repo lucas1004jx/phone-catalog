@@ -24,11 +24,18 @@
         padding: 10px;
         padding-top: 60px;
     }
-   
+    @include break(0,599px){
+        padding-top: 80px;
+    }
     .subMenu-container{
         position: absolute;
         left: 25px;
         top:10px;
+        z-index: 2;
+        @include break(0,599px){
+            top:35px;
+            left: 10px; 
+        }
         .subMenu{
             display: inline-block;
             margin-right: 5px;
@@ -43,6 +50,14 @@
                 content: "\274c";
                 font-size: 12px;
                  margin-left: 10px;
+                 @include break(0,599px){
+                         font-size: 10px;
+                 }
+            }
+            @include break(0,599px){
+                font-size: 12px;
+                padding: 5px;
+                
             }
         }
        
@@ -57,9 +72,10 @@
     padding: 30px 20px 50px 20px;
    position: relative;
    font-family: $main-font;
-   transition: transform 0.5s ease;
+   transition: transform 0.5s ease,box-shadow 0.3s ease;
    &:hover{
        transform: scale(1.01);
+       box-shadow: 0 6px 10px $shadow-color;
    }
    @include break(0,768px){
     padding: 10px;

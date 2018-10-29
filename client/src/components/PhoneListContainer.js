@@ -10,7 +10,8 @@ const URL='http://localhost:4000/images/';
 class PhoneListContainer extends Component{
       componentDidMount(){
           //to simulate the request time
-          setTimeout(()=>this.props.fetchPhones(),2000); 
+          
+          setTimeout(()=>this.props.fetchPhones(),1500); 
       }
 
      renderProduct(){
@@ -27,10 +28,15 @@ class PhoneListContainer extends Component{
          }else{
             Products=Products.filter((phone)=>phone.product===Type && phone.brand===Brand);
          }
- 
+
+         if(!Products.length){
+             setTimeout(()=><div>fail to load</div>,2000);
+            return <Preloader brand={this.props.brand} product={this.props.product}/>
+        }
+          
        return (
            Products.map((phone,index)=>
-           <div className="phone" key={index} data-id={phone.id}>
+           <div className="phone" key={index} data-id={phone.id} data-product={phone.product}>
              <img src={`${URL}${phone.displayImage}`} alt="" onClick={this.props.selectPhone}/>
             <div className="detail">
                  <p className="brand">
@@ -63,9 +69,7 @@ class PhoneListContainer extends Component{
       }
 
     render(){
-        if(!this.props.phones.length){
-            return <Preloader/>
-        }
+        
         return(
             <div className="phones-container">
             {this.renderSubMenu()}
@@ -78,8 +82,8 @@ class PhoneListContainer extends Component{
 const mapStateToProps= state=>({
     phones:state.phones.items,
     phoneDisplay:state.activePhone.display,
-    brand:state.selectBrand.brand,
-    product:state.selectBrand.product
+    brand:state.filter.brand,
+    product:state.filter.product
 
 });
 

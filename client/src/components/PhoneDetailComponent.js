@@ -6,6 +6,7 @@ import {closeOverlay} from '../actions/closeOverlayAction';
 const URL='http://localhost:4000/images/';
 
 class PhoneDetailComponet extends Component{
+
     render(){
     // console.log(store.getState());
     

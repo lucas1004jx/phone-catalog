@@ -1,12 +1,12 @@
 import {combineReducers} from 'redux';
 import phoneReducer from './phoneReducer';
 import activePhoneReducer from './activePhoneReducer';
-import selectBrandReducer from './selectBrandReducer';
+import filterReducer from './filterReducer';
 
  const rootReducer=combineReducers({
     phones:phoneReducer,
     activePhone:activePhoneReducer,
-    selectBrand:selectBrandReducer
+    filter:filterReducer
 })
 
 export default rootReducer;
