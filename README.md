@@ -28,7 +28,7 @@ Youcan click the menu "mobile tablet watch" to the products of each category, yo
 ##End to End Testing
 I use cypress to run the E2E testing, I have writen some script to test the front end side, the script is inside the cypress folder--->intergration---->phoneCatalogApp_spec.js
 
-In the terminal run `./node_modules/.bin/cypress` to open the cypress CLI, then select phoneCatalogApp_spec.js to run the test.
+In the terminal run `./node_modules/.bin/cypress open` to open the cypress CLI, then select phoneCatalogApp_spec.js to run the test.
 
 I hope you like this project !
 
