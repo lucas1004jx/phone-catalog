@@ -34,6 +34,13 @@
         grid-template-columns: 1fr;
         grid-template-rows: 280px minmax(200px,280px);
         grid-template-areas: "img" "info";
+       }
+       @include break(0,360px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px minmax(200px,250px);
+        grid-template-areas: "img" "info";
+       }
+       @include break(0,599px){
         &:after{
             content: "";
             display: block;
@@ -46,12 +53,6 @@
             border-radius: 20px;
         }
        }
-       @include break(0,360px){
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px minmax(200px,250px);
-        grid-template-areas: "img" "info";
-       }
-       
        .product-img{
            grid-area: img;
            padding: 30px;
